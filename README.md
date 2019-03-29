@@ -1,16 +1,14 @@
 # Airport!
 
-:star: This is a PDA Homework :star:
+## Brief
 
-Your task is to model a system for your _favourite_ airport to manage its flights. You should use the tools you have learnt this week ___where appropriate and useful___.
-
-As there are different ways to model this, take some time before you start to plan this out to avoid ending up in a muddle. Remember to ***TDD***!
+The task is to model a system for an airport to manage its flights, using the tools  learnt during week 11 ___where appropriate and useful___, including TDD.
 
 ## MVP
 
 Each plane should have:
 
-* a type (e.g. *BOEING747*) which stores the passenger capacity (**HINT**: _ENUM_!?)
+* a type (e.g. *BOEING747*) which stores the passenger capacity  :white_check_mark:
 * an airline
 * a collection of passengers
 
