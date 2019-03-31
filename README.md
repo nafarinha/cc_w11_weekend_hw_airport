@@ -27,7 +27,7 @@ The airport should be able to:
 
 * create flights :white_check_mark:
 * assign planes from the hangar to flights :white_check_mark:
-* sell tickets for flights
+* sell tickets for flights :white_check_mark:
 
 ### Extensions
 * The airport wants to keep track of how many people have booked onto each flight
