@@ -20,4 +20,10 @@ public class Passenger {
         return this.tickets;
     }
 
+    public void addTicket(Ticket newTicket) {
+        this.tickets.add(newTicket);
+    }
+
+
+
 }
