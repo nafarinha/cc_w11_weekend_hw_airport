@@ -14,9 +14,9 @@ Each plane should have:
 
 Every flight should have:
 
-* a plane
-* flight number
-* destination
+* a plane :white_check_mark:
+* flight number :white_check_mark:
+* destination :white_check_mark:
 
 The airport should have:
 
