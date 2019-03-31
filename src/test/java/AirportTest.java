@@ -39,4 +39,23 @@ public class AirportTest {
         airport1.addPlaneToHangar(plane1);
         assertEquals(1, airport1.getHangar().size());
     }
+
+    @Test
+    public void canRemovePlaneFromHangar() {
+        airport1.addPlaneToHangar(plane1);
+        airport1.addPlaneToHangar(plane2);
+
+        airport1.removePlaneFromHangar(plane1);
+
+        assertEquals(1, airport1.getHangar().size());
+    }
+
+/*    @Test
+    public void canAssignPlaneToFlight() {
+        airport1.addPlaneToHangar(plane1);
+        airport1.addPlaneToHangar(plane2);
+
+        assertEquals();
+
+    }*/
 }
