@@ -7,6 +7,7 @@ public class Flight {
     public Flight(String flightNumber, String destination) {
         this.flightNumber = flightNumber;
         this.destination = destination;
+        this.plane = null;
     }
 
     public String getFlightNumber() {
@@ -17,13 +18,13 @@ public class Flight {
         return this.destination;
     }
 
-    public void addPlane(Plane newPlane) {
-        this.plane = newPlane;
+        public Plane getPlane(){
+        return this.plane;
     }
 
-//    public Plane getPlane(){
-//        return this.plane;
-//    }
+/*    public void addPlane(Plane newPlane) {
+        this.plane = newPlane;
+    }*/
 
 
 }

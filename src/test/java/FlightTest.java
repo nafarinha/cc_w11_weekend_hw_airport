@@ -2,6 +2,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
 public class FlightTest {
 
@@ -25,8 +26,16 @@ public class FlightTest {
         assertEquals("CPH", flight1.getDestination());
     }
 
-/*    @Test
+        @Test
     public void canGetPlane() {
-        assertEquals(PlaneType.AIRBUSA330, flight1.getPlane().getType());
+        assertNull(flight1.getPlane());
+    }
+
+/*    @Test
+    public void canAddPlane() {
+        flight1.addPlane(plane1);
+        assertEquals("Norwegian", flight1.getPlane().getAirline());
     }*/
+
+
 }
