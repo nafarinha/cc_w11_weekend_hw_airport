@@ -14,13 +14,17 @@ public class Airport {
     public String getCode() {
         return this.code;
     }
-    public ArrayList<Plane> getHangarCount() {
+    public ArrayList<Plane> getHangar() {
         return this.hangar;
     }
 
     public Flight createFlight(String flightNumber, String destination, Plane plane) {
         Flight newFlight = new Flight(flightNumber, destination, plane);
         return newFlight;
+    }
+
+    public void addPlaneToHangar(Plane newPlane) {
+        this.hangar.add(newPlane);
     }
 
 
