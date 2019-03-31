@@ -37,4 +37,12 @@ public class Ticket {
     public void addOrigin(String newOrigin) {
         this.origin = newOrigin;
     }
+
+    public String getDestination() {
+        return this.destination;
+    }
+
+    public void addDestination(String newDestination) {
+        this.destination = newDestination;
+    }
 }

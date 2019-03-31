@@ -1,8 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
+import static org.junit.Assert.*;
 
 public class TicketTest {
 
@@ -33,5 +32,16 @@ public class TicketTest {
     public void canAddOrigin() {
         ticket1.addOrigin("EDI");
         assertEquals("EDI", ticket1.getOrigin());
+    }
+
+    @Test
+    public void canGetDestination() {
+        assertNull(ticket1.getDestination());
+    }
+
+    @Test
+    public void canAddDestination() {
+        ticket1.addDestination("CPH");
+        assertEquals("CPH", ticket1.getDestination());
     }
 }
