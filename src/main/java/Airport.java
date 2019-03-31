@@ -38,6 +38,15 @@ public class Airport {
 
     }
 
+    public void sellTicket(Passenger newPassenger, Flight newFlight) {
+        Ticket newTicket = new Ticket(newFlight.getFlightNumber());
+        newTicket.addOrigin(this.code);
+        newTicket.addDestination(newFlight.getDestination());
+        newPassenger.addTicket(newTicket);
+
+
+    }
+
 
 
 
