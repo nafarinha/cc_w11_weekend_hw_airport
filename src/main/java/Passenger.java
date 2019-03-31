@@ -16,4 +16,8 @@ public class Passenger {
         return firstName + " " + lastName;
     }
 
+    public ArrayList<Ticket> getTickets() {
+        return this.tickets;
+    }
+
 }
