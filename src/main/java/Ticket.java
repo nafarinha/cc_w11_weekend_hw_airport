@@ -9,6 +9,8 @@ public class Ticket {
     public Ticket(String flightNumber) {
         this.flightNumber = flightNumber;
         this.generateTicketNumber();
+        this.origin = null;
+        this.destination = null;
     }
 
     public String getFlightNumber() {
@@ -26,5 +28,13 @@ public class Ticket {
 
     public long getTicketNumber() {
         return ticketNumber;
+    }
+
+    public String getOrigin() {
+        return this.origin;
+    }
+
+    public void addOrigin(String newOrigin) {
+        this.origin = newOrigin;
     }
 }
