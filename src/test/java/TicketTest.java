@@ -16,4 +16,10 @@ public class TicketTest {
     public void hasFlightNumber() {
         assertEquals("DY3503", ticket1.getFlightNumber());
     }
+
+    @Test
+    public void has14DigitETicketNumber() {
+        int actual = String.valueOf(ticket1.getTicketNumber()).length();
+        assertEquals(14, actual);
+    }
 }
