@@ -22,4 +22,9 @@ public class AirportTest {
     public void canGetCode() {
         assertEquals("EDI", airport1.getCode());
     }
+
+    @Test
+    public void canGetHangar() {
+        assertEquals(0, airport1.getHangar().size());
+    }
 }

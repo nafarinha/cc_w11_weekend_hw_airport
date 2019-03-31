@@ -20,8 +20,8 @@ Every flight should have:
 
 The airport should have:
 
-* a collection of hangars (to store the planes)
-* an airport code (e.g. _GLA_)
+* a collection of hangars (to store the planes) :white_check_mark:
+* an airport code (e.g. _GLA_) :white_check_mark:
 
 The airport should be able to:
 
