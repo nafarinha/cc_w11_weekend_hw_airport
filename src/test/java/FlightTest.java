@@ -19,4 +19,11 @@ public class FlightTest {
     public void canGetFlightNumber() {
         assertEquals("DY3505", flight1.getFlightNumber());
     }
+
+    @Test
+    public void canGetDestination() {
+        assertEquals("CPH", flight1.getDestination());
+    }
+
+
 }
