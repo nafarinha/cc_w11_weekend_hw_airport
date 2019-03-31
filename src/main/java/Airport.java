@@ -18,8 +18,9 @@ public class Airport {
         return this.hangar;
     }
 
-    public Flight createFlight(String flightNumber, String destination, Plane plane) {
-        Flight newFlight = new Flight(flightNumber, destination, plane);
+    public Flight createFlight(String flightNumber, String destination, Plane newPLane) {
+        Flight newFlight = new Flight(flightNumber, destination);
+        newFlight.addPlane(newPLane);
         return newFlight;
     }
 
@@ -30,6 +31,8 @@ public class Airport {
     public void removePlaneFromHangar(Plane removedPlane) {
         this.hangar.remove(removedPlane);
     }
+
+
 
 
 

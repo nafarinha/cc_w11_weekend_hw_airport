@@ -14,7 +14,7 @@ public class AirportTest {
         ticket1 = new Ticket("DY3503");
         plane1 = new Plane(PlaneType.BOEING777, "Norwegian");
         plane2 = new Plane(PlaneType.AIRBUSA330, "KLM");
-        flight1 = new Flight("DY3503", "AMS", plane1);
+        flight1 = new Flight("DY3503", "AMS");
         airport1 = new Airport("EDI");
     }
 
@@ -54,6 +54,8 @@ public class AirportTest {
     public void canAssignPlaneToFlight() {
         airport1.addPlaneToHangar(plane1);
         airport1.addPlaneToHangar(plane2);
+
+        airport1.assignPlaneToFlight(plane1)
 
         assertEquals();
 
