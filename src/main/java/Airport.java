@@ -17,4 +17,9 @@ public class Airport {
     public ArrayList<Plane> getHangar() {
         return this.hangar;
     }
+
+    public Flight createFlight(String flightNumber, String destination, Plane plane) {
+        Flight newFlight = new Flight(flightNumber, destination, plane);
+        return newFlight;
+    }
 }

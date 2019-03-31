@@ -27,4 +27,10 @@ public class AirportTest {
     public void canGetHangar() {
         assertEquals(0, airport1.getHangar().size());
     }
+
+    @Test
+    public void canCreateFlight() {
+        Flight testFlight = airport1.createFlight("DY3503", "AMS", plane1);
+        assertEquals(flight1.getFlightNumber(), testFlight.getFlightNumber());
+    }
 }
