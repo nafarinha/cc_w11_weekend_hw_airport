@@ -9,8 +9,8 @@ The task is to model a system for an airport to manage its flights, using the to
 Each plane should have:
 
 * a type (e.g. *BOEING747*) which stores the passenger capacity  :white_check_mark:
-* an airline
-* a collection of passengers
+* an airline :white_check_mark:
+* a collection of passengers :white_check_mark:
 
 Every flight should have:
 
