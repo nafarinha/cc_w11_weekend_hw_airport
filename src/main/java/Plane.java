@@ -23,4 +23,8 @@ public class Plane {
     public ArrayList<Passenger> getPassengers() {
         return this.passengers;
     }
+
+    public void addPassenger(Passenger newPassenger) {
+        this.passengers.add(newPassenger);
+    }
 }
