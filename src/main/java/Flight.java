@@ -22,9 +22,9 @@ public class Flight {
         return this.plane;
     }
 
-/*    public void addPlane(Plane newPlane) {
+    public void addPlane(Plane newPlane) {
         this.plane = newPlane;
-    }*/
+    }
 
 
 }

@@ -31,11 +31,11 @@ public class FlightTest {
         assertNull(flight1.getPlane());
     }
 
-/*    @Test
+    @Test
     public void canAddPlane() {
         flight1.addPlane(plane1);
         assertEquals("Norwegian", flight1.getPlane().getAirline());
-    }*/
+    }
 
 
 }
