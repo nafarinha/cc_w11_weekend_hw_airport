@@ -24,8 +24,8 @@ public class AirportTest {
     }
 
     @Test
-    public void canGetHangar() {
-        assertEquals(0, airport1.getHangar().size());
+    public void canGetHangarCount() {
+        assertEquals(0, airport1.getHangarCount().size());
     }
 
     @Test
@@ -33,4 +33,5 @@ public class AirportTest {
         Flight testFlight = airport1.createFlight("DY3503", "AMS", plane1);
         assertEquals(flight1.getFlightNumber(), testFlight.getFlightNumber());
     }
+
 }

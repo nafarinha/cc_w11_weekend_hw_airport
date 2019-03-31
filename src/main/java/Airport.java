@@ -14,7 +14,7 @@ public class Airport {
     public String getCode() {
         return this.code;
     }
-    public ArrayList<Plane> getHangar() {
+    public ArrayList<Plane> getHangarCount() {
         return this.hangar;
     }
 
@@ -22,4 +22,6 @@ public class Airport {
         Flight newFlight = new Flight(flightNumber, destination, plane);
         return newFlight;
     }
+
+
 }
