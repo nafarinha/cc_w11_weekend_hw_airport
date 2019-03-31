@@ -32,6 +32,12 @@ public class Airport {
         this.hangar.remove(removedPlane);
     }
 
+    public void assignPlaneToFlight(Plane newPlane, Flight newFlight) {
+        this.removePlaneFromHangar(newPlane);
+        newFlight.addPlane(newPlane);
+
+    }
+
 
 
 

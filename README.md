@@ -26,7 +26,7 @@ The airport should have:
 The airport should be able to:
 
 * create flights :white_check_mark:
-* assign planes from the hangar to flights
+* assign planes from the hangar to flights :white_check_mark:
 * sell tickets for flights
 
 ### Extensions

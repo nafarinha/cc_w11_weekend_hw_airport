@@ -31,7 +31,7 @@ public class AirportTest {
     @Test
     public void canCreateFlight() {
         Flight testFlight = airport1.createFlight("DY3503", "AMS", plane1);
-        assertEquals(flight1.getFlightNumber(), testFlight.getFlightNumber());
+        assertEquals("DY3503", testFlight.getFlightNumber());
     }
 
     @Test
@@ -50,14 +50,14 @@ public class AirportTest {
         assertEquals(1, airport1.getHangar().size());
     }
 
-/*    @Test
+    @Test
     public void canAssignPlaneToFlight() {
         airport1.addPlaneToHangar(plane1);
         airport1.addPlaneToHangar(plane2);
 
-        airport1.assignPlaneToFlight(plane1)
+        airport1.assignPlaneToFlight(plane1, flight1);
 
-        assertEquals();
-
-    }*/
+        assertEquals(1, airport1.getHangar().size());
+        assertEquals(PlaneType.BOEING777, flight1.getPlane().getType());
+    }
 }
