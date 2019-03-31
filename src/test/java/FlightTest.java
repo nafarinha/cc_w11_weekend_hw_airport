@@ -25,5 +25,8 @@ public class FlightTest {
         assertEquals("CPH", flight1.getDestination());
     }
 
-
+    @Test
+    public void canGetPlane() {
+        assertEquals(PlaneType.AIRBUSA330, flight1.getPlane().getType());
+    }
 }

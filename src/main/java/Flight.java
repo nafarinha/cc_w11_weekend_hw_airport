@@ -18,5 +18,9 @@ public class Flight {
         return this.destination;
     }
 
+    public Plane getPlane(){
+        return this.plane;
+    }
+
 
 }
