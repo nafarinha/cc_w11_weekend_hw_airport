@@ -58,6 +58,7 @@ public class Airport {
         newTicket.addOrigin(this.code);
         newTicket.addDestination(newFlight.getDestination());
         newPassenger.addTicket(newTicket);
+        addPassenger(newPassenger);
 
 
     }

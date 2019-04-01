@@ -95,5 +95,6 @@ public class AirportTest {
         assertEquals("EDI", testTicket.getOrigin());
         assertEquals("AMS", testTicket.getDestination());
         assertEquals("KL1276", testTicket.getFlightNumber());
+        assertEquals(1, airport1.getPassengers().size());
     }
 }
