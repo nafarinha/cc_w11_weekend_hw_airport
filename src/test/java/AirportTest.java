@@ -53,6 +53,12 @@ public class AirportTest {
     }
 
     @Test
+    public void canGetPassengers() {
+        assertEquals(0, airport1.getPassengers().size());
+    }
+
+
+    @Test
     public void canAssignPlaneToFlight() {
         airport1.addPlaneToHangar(plane1);
         airport1.addPlaneToHangar(plane2);

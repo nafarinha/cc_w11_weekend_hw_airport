@@ -4,10 +4,12 @@ public class Airport {
 
     private String code;
     private ArrayList<Plane> hangar;
+    private ArrayList<Passenger> passengers;
 
     public Airport(String code) {
         this.code = code;
         this.hangar = new ArrayList<>();
+        this.passengers = new ArrayList<>();
 
     }
 
@@ -17,6 +19,11 @@ public class Airport {
     public ArrayList<Plane> getHangar() {
         return this.hangar;
     }
+
+    public ArrayList<Passenger> getPassengers() {
+        return this.passengers;
+    }
+
 
     public Flight createFlight(String flightNumber, String destination, Plane newPLane) {
         Flight newFlight = new Flight(flightNumber, destination);
