@@ -24,6 +24,14 @@ public class Airport {
         return this.passengers;
     }
 
+    public void addPassenger(Passenger newPassenger) {
+        this.passengers.add(newPassenger);
+    }
+
+    public void removePassenger (Passenger removedPassenger) {
+        this.passengers.remove(removedPassenger);
+    }
+
 
     public Flight createFlight(String flightNumber, String destination, Plane newPLane) {
         Flight newFlight = new Flight(flightNumber, destination);

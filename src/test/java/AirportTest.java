@@ -4,7 +4,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class AirportTest {
-    Passenger passenger1;
+    Passenger passenger1, passenger2;
     Ticket ticket1;
     Plane plane1, plane2;
     Flight flight1;
@@ -13,6 +13,7 @@ public class AirportTest {
     @Before
     public void before() {
         passenger1 = new Passenger("Smith", "Jane");
+        passenger2 = new Passenger("Davids", "Jack");
         ticket1 = new Ticket("DY3503");
         plane1 = new Plane(PlaneType.BOEING777, "Norwegian");
         plane2 = new Plane(PlaneType.AIRBUSA330, "KLM");
@@ -55,6 +56,22 @@ public class AirportTest {
     @Test
     public void canGetPassengers() {
         assertEquals(0, airport1.getPassengers().size());
+    }
+
+    @Test
+    public void canAddPassengers() {
+        airport1.addPassenger(passenger1);
+        assertEquals(1, airport1.getPassengers().size());
+    }
+
+    @Test
+    public void canRemovePassengers() {
+        airport1.addPassenger(passenger1);
+        airport1.addPassenger(passenger2);
+
+        airport1.removePassenger(passenger1);
+
+        assertEquals("Jack Davids", airport1.getPassengers().get(0).prettyName());
     }
 
 
